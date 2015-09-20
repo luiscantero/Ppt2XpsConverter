@@ -14,6 +14,7 @@ namespace PPT2XPS
             bool appAlreadyRunning = System.Diagnostics.Process.GetProcessesByName("powerpnt").Length > 0;
 
             // Create/get instance of MS PowerPoint.
+            // Do it once per file to avoid out-of-memory issues or crashes to due memory fragmentation, etc.
             Console.WriteLine("Starting MS PowerPoint ...");
             var app = new MSOInterop.PowerPoint.Application();
 
