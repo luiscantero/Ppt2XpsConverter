@@ -68,8 +68,8 @@ namespace PPT2XPS
         {
             pptFile.PrintOptions.ActivePrinter = "Microsoft XPS Document Writer";
             pptFile.PrintOptions.OutputType = MSOInterop.PowerPoint.PpPrintOutputType.ppPrintOutputNotesPages;
-            pptFile.PrintOptions.HighQuality = MSOCore.MsoTriState.msoFalse; // msoTrue = -1 | msoFalse = 0
             pptFile.PrintOptions.PrintColorType = MSOInterop.PowerPoint.PpPrintColorType.ppPrintColor;
+            pptFile.PrintOptions.HighQuality = MSOCore.MsoTriState.msoFalse; // msoTrue = -1 | msoFalse = 0
             pptFile.PrintOptions.PrintHiddenSlides = MSOCore.MsoTriState.msoTrue;
             pptFile.PrintOptions.PrintInBackground = MSOCore.MsoTriState.msoFalse; // Wait for print to finish.
         }
