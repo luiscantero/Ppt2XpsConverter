@@ -14,6 +14,10 @@ namespace PPT2XPS
             string path = GetParamOrExePath(args.FirstOrDefault());
 
             PrintAll(path);
+
+            Console.WriteLine("");
+            Console.WriteLine("Press any key to continue . . .");
+            Console.ReadKey(true);
         }
 
         private static string GetParamOrExePath(string paramPath)
